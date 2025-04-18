@@ -1,0 +1,13 @@
+Command prompt -practical
+
+Step 01: Open cmd and type “tracert www.facebook.com” command and type “www.facebook.com”.
+command:tracert www.facebook.com
+
+Step 02: Ping few IP addresses of “www.facebook.com
+command: ping www.facebook.com
+
+Step 03: “Netstat” command.
+command: Netstat
+
+Step 04: “ipfconfig” command.
+command: ipfconfig

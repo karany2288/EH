@@ -1,0 +1,16 @@
+1. practical-1
+ 
+A. Use NMap to perform an ACK scan to determine if a port is filtered,
+unfiltered, or open. [20]
+
+Command: 
+Single Port Scan: nmap -sA scanme.nmap.org -p 22 , 
+Multiple Ports: nmap -sA scanme.nmap.org -p 22,80,443
+
+B. Perform SYN, FIN, NULL, and XMAS scans to identify open ports and
+their Characteristics [20]
+Command: 
+SYN scan= nmap -sS -p 22,80,443 -v --reason scanme.nmap.org
+FIN scan= nmap -sF scanme.nmap.org -p 22,80,443 -v --reason
+NULL scan= nmap -sN scanme.nmap.org -p 22,80,443 -v --reason
+XMAS scan= nmap -sX scanme.nmap.org -p 22,80,443 -v --reason
